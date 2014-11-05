@@ -659,8 +659,8 @@ void MainWindow::mainCalculate()
                              +QString::number(surfTension2));
 //    plotterDensity->appendPoint(QPointF(polygonGraphPoint.x(),density));
 //    plotterDensity->appendPoint(QPointF(polygonGraphPoint.x(),sTeta));
-//    plotterBorder->show();
-//    plotterDensity->show();
+    plotterBorder->show();
+    plotterDensity->show();
 }
 
 void MainWindow::saveToFile()
