@@ -224,7 +224,7 @@ void MainWindow::openImage()
     polygonPillow.clear();
     polygonFull.clear();
 
-    namePix = QFileDialog::getOpenFileName(this,"pix","/home/nekomata/Dropbox/Experiment/Experiment");
+    namePix = QFileDialog::getOpenFileName(this,"pix","/home/mishko/Dropbox/Experiment/Experiment");
     pixOriginal.load(namePix);
     sceneOriginal->addPixmap(pixOriginal);
     borderScene->addPixmap(pixOriginal);
@@ -246,7 +246,7 @@ void MainWindow::openImage()
 
 void MainWindow::openFileListSlot()
 {
-    fileList = QFileDialog::getOpenFileNames(this,"Open images...","/home/nekomata/Dropbox/Experiment/Experiment");
+    fileList = QFileDialog::getOpenFileNames(this,"Open images...","/home/mishko/Dropbox/Experiment/Experiment");
     this->openFileList();
 }
 
@@ -665,7 +665,7 @@ void MainWindow::mainCalculate()
 
 void MainWindow::saveToFile()
 {
-    resultFile.setFileName(QFileDialog::getSaveFileName(this,"Save data file...","/home/nekomata/Dropbox/Experiment/Experiment"));
+    resultFile.setFileName(QFileDialog::getSaveFileName(this,"Save data file...","/home/mishko/Dropbox/Experiment/Experiment"));
     resultFile.open(QIODevice::WriteOnly);
     QTextStream out(&resultFile);
     out<<ui->textEditOut2->toPlainText();
